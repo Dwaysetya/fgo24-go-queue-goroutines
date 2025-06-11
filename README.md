@@ -4,8 +4,6 @@
 ---
 
 ## 🚀 Fitur
-
-- Use **goroutine** to run each queue in parallel.
 - **Random delay** on each queue using `rand.Intn`.
 - **Synchronization** with `sync.WaitGroup`.
 - Show output after each queue is finished along with the wait time.
