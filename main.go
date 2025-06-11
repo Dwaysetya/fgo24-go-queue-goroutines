@@ -11,10 +11,10 @@ func queue(id int, tipe *int, wg *sync.WaitGroup) {
 
 	defer wg.Done() 
 
-	sleepTime := time.Duration(rand.Intn(3)+1) * time.Second
-	time.Sleep(sleepTime)
+	delay := time.Duration(rand.Intn(3)+1) * time.Second
+	time.Sleep(delay)
 
-	fmt.Printf("Queue %d %d selesai dalam %v\n", id, &tipe, sleepTime)
+	fmt.Printf("Queue %d %d selesai dalam %v\n", id, &tipe, delay)
 }
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 
 	var wg sync.WaitGroup
 
-	for i := 1; i <= 5; i++ {
+	for i := 1; i <= 3; i++ {
 		wg.Add(1)
 
 		func(i int) {
