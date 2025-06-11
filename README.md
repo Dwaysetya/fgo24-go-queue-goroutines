@@ -1,15 +1,14 @@
 # ⏳ Goroutine Queue Simulation in Go
 
-Simulasi program **antrian (queue)** menggunakan **goroutine** dengan waktu tunggu acak (random delay) antara 1–3 detik untuk setiap proses. Program ini juga menggunakan `sync.WaitGroup` agar semua proses selesai sebelum program berakhir.
-
+**queue** program simulation using **goroutine** with random delay between 1–3 seconds for each process. This program also uses `sync.WaitGroup` so that all processes are completed before the program ends.
 ---
 
 ## 🚀 Fitur
 
-- Menggunakan **goroutine** untuk menjalankan setiap queue secara paralel.
-- **Waktu delay acak** pada tiap queue menggunakan `rand.Intn`.
-- **Sinkronisasi** dengan `sync.WaitGroup`.
-- Menampilkan output setelah setiap queue selesai disertai waktu tunggunya.
+- Use **goroutine** to run each queue in parallel.
+- **Random delay** on each queue using `rand.Intn`.
+- **Synchronization** with `sync.WaitGroup`.
+- Show output after each queue is finished along with the wait time.
 
 ---
 
